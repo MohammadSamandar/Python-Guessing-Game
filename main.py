@@ -1,9 +1,6 @@
 from random import randint
 
 
-
-
-
 while True:
 
     while True:
