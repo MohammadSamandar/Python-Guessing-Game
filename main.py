@@ -34,9 +34,15 @@ while True:
     number = 0
 
     while number < guess_limit :
+        try: 
+            user_guess = int(input("enter a number: "))
+            number += 1
+        except ValueError:
+            print("invalid input. please enter number!")
+            continue
 
-        user_guess = int(input("enter a number: "))
-        number += 1
+
+        
         if user_guess > secret_number:
             print("The number you guessed is greater than the hidden number.")
         
@@ -61,7 +67,7 @@ while True:
     if play_again == 'no':
         break
     
-        
+
         
 
     
