@@ -1,5 +1,6 @@
 from random import randint
 
+
 def setup_difficulty():
     """Asks the user for a difficulty level and returns the game settings."""
     while True:
